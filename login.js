@@ -88,5 +88,6 @@ window.addEventListener('load', function () {
 pass.addEventListener('input', (e) => {
     if (pass.value !== '') {
         InvalidPass.style.display = 'none'
+        console.log()
     }
 })
