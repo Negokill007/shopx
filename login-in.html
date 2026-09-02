@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <title>ShopX</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <main>
+            <section class="hero">
+                <div class="hero-head">
+                    <h1>Shop<span>X</span></h1>
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </div>
+                <div class="hero-text">
+                    <h1>Welcome<br> <span>Back</span></h1>
+                    <p class="explore">
+                        Login to your account and continue <br> shopping with ShopX.
+                    </p>
+                </div>
+            </section>
+
+            <section class="login-in-form">
+                <form>
+                    <div class="form-main">
+                        <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;<input required type="email"
+                            placeholder="Email Address">
+                        <i style="visibility: hidden;" class="fa-solid fa-eye"></i>
+                    </div>
+
+                    <p class="incorrectEmail">Please enter a valid email address.</p>
+
+                    <div class="form-main">
+                        <i class="fa-solid fa-lock" id="lock"></i>&nbsp;&nbsp;
+                        <input type="password" placeholder="Password" id="password">
+                        <i style="color: white;" class="fa-regular fa-eye" id="eyetoggle"></i>
+                    </div>
+
+                    <p class="incorrectPass" id="invalidPass">hello</p>
+
+                    <div class="remember">
+                        <div class="check">
+                            <input type="checkbox">&nbsp;&nbsp;<span>Remember Me</span>
+                        </div>
+                        <a href="">
+                            <p>Forget Password?</p>
+                        </a>
+                    </div>
+                    <button>Login</button>
+                    <p class="option">Or Login with </p>
+
+                    <div class="login-options">
+                        <div class="card">
+                            <img src="images/google-removebg-preview.png" alt="google logo">
+                            <p>Google</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/facebook-removebg-preview.png" alt="facebook logo">
+                            <p>Facebook</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/apple-removebg-preview.png" alt="Apple logo">
+                            <p>Apple</p>
+                        </div>
+                    </div>
+
+                    <div class="secure">
+                        <div class="icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="text">
+                            <span>Your Security is our proirity</span>
+                            <p>We use advanced encryption to protect <br> your personal information.</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

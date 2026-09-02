@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <main>
+            <section class="hero">
+                <div class="hero-head">
+                    <h1>Shop<span>X</span></h1>
+                    <p>Already have an account? <a href="login-in.html">Login</a></p>
+                </div>
+                <div class="hero-text">
+                    <h1>Create Your<br> <span>Account</span></h1>
+                    <p class="explore">
+                        Join ShopX and enjoy the best shopping <br> experience with unbeatable deals.
+                    </p>
+                </div>
+            </section>
+
+            <section class="register-form">
+                 <p id="successful">Account created successfully</p>
+                <form>
+                    <div class="personal-information">
+                        <div class="form-head">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Personal Information</span>
+                        </div>
+                        <div class="personal-form">
+                            <div class="personal-card">
+                                <div class="main-form">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input required type="text" placeholder="Full name">
+                                </div>
+
+                                <div class="main-form">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input required type="text" placeholder="User name">
+                                </div>
+                            </div>
+
+                            <div class="main-form">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input required type="email" placeholder="Email Address">
+                            </div>
+
+                            <div class="main-form">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" placeholder="Phone Number (optional)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security">
+                        <div class="form-head form2">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Security</span>
+                        </div>
+
+                        <div class="security-form">
+                            <div class="main-form">
+                                <i class="fa-solid fa-lock"></i>
+                                <div>
+                                    <input required id="password" type="password" placeholder="Password">
+                                    <i class="fa-solid fa-eye" id="passwordEye"></i>
+                                </div>
+                            </div>
+                            <div class="main-form">
+                                <i class="fa-solid fa-lock"></i>
+                                <div>
+                                    <input required id="confirmpassword" type="password" placeholder="Confirm Password">
+                                    <i class="fa-solid fa-eye" id="confirmpasswordEye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <p id="info"></p>
+                            <p id="valid"></p>
+                        </div>
+                    </div>
+
+                    <div class="remember">
+                        <div class="check">
+                            <input required type="checkbox">&nbsp;&nbsp;<span>I agree to the <a href="">Terms & Conditions </a> and <a href="">Policy</a></span>
+                        </div>
+                    </div>
+
+                    <button>Create Account</button>
+                    <p class="option">Or sign up with </p>
+
+                    <div class="login-options">
+                        <div class="card">
+                            <img src="images/google-removebg-preview.png" alt="google logo">
+                            <p>Google</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/facebook-removebg-preview.png" alt="facebook logo">
+                            <p>Facebook</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/apple-removebg-preview.png" alt="Apple logo">
+                            <p>Apple</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

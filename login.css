@@ -1,0 +1,522 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrap{
+    margin: 0px auto;
+    max-width: 1500px;
+}
+
+
+
+/* Hero section  */
+.hero{
+    background-image: url(images/regis-loginBg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-head{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-head h1{
+    font-size: 2.5rem;
+}
+
+.hero-head h1 span{
+    color: gold;
+}
+
+.hero-text{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+
+.hero-head p{
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.283);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hero-head p a{
+    text-decoration: none;
+    color: gold;
+    cursor: pointer;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 span{
+    color: gold;
+}
+
+.explore{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* login in form section  */
+.login-in-form{
+    padding: 40px;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-main input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    width: 600px;
+    /* background-color: gray; */
+}
+
+.form-main input::placeholder{
+    font-size: 1rem
+}
+
+.form-main{
+    border: 1px solid rgb(49, 49, 49);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    width: fit-content;
+}
+
+form{
+    padding: 40px;
+    background-color: rgb(40, 40, 40);
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.form-main i{
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+form button{
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background-color: gold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold
+}
+
+form button:hover{
+    font-size: 2rem;
+    background-color: hsl(51, 100%, 30%);
+}
+
+.option{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+.login-options img{
+    width: 100%;
+    max-width: 30px ;
+}
+
+.login-options .card{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#eyetoggle:hover{
+    cursor: pointer;
+}
+
+.remember a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.remember a:hover{
+    border-bottom: 2px solid gold;
+    color: gold;
+    font-size: 1.1rem;
+}
+ 
+.login-options .card:hover{
+    background-color: gold;
+    color: black;
+}
+
+.login-options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px
+}
+
+.login-options .card p{
+    font-size: 1.4rem;
+}
+
+.secure{
+    border: 1px solid hsl(51, 100%, 15%);
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.secure .icon{
+    font-size: 3.5rem;
+    border: 1px solid gold;
+    padding: 10px;
+    border-radius: 50%;
+    color: gold;
+}
+
+.secure .text span{
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.secure .text p{
+    line-height: 1.5;
+    margin-top: 10px;
+    color: rgb(170, 168, 168);
+    font-size: 1rem;
+}
+
+.incorrectEmail,
+.incorrectPass{
+    color: red;
+    margin-bottom: 5px;
+    border: 1px dotted gold;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    display: none;
+}
+
+
+
+
+
+/* ============================= */
+/* TABLET VIEW - 998px */
+/* ============================= */
+
+@media (max-width: 998px){
+
+    .hero-head{
+        padding: 30px;
+    }
+
+    .hero-head h1{
+        font-size: 2.2rem;
+    }
+
+    .hero-head p{
+        font-size: 1rem;
+    }
+
+    .hero-text{
+        padding: 30px;
+        height: 180px;
+    }
+
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+
+    .login-in-form{
+        padding: 30px;
+    }
+
+    form{
+        padding: 30px;
+        width: 100%;
+        max-width: 750px;
+    }
+
+    .form-main{
+        width: 100%;
+    }
+
+    .form-main input{
+        width: 100%;
+    }
+
+    .remember{
+        font-size: 1rem;
+    }
+
+    .login-options .card{
+        padding: 15px;
+    }
+
+    .login-options .card p{
+        font-size: 1.1rem;
+    }
+
+    .secure{
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .secure .icon{
+        font-size: 3rem;
+    }
+
+    .secure .text span{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* ============================= */
+/* PHONE VIEW - 768px */
+/* ============================= */
+
+@media (max-width: 768px){
+
+    .hero-head{
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .hero-head h1{
+        font-size: 2rem;
+    }
+
+    .hero-head p{
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    .hero-text{
+        padding: 20px;
+        height: 180px;
+    }
+
+    .hero-text h1{
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+    }
+
+    .explore{
+        font-size: 0.9rem;
+    }
+
+    .login-in-form{
+        padding: 20px 15px;
+    }
+
+    form{
+        padding: 20px 15px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .form-main{
+        padding: 18px;
+        width: 100%;
+    }
+
+    .form-main input{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .form-main i{
+        font-size: 1.2rem;
+    }
+
+    .form-main input::placeholder{
+        font-size: 0.9rem;
+    }
+
+    .remember{
+        font-size: 0.9rem;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        gap: 10px;
+    }
+
+    .remember .check{
+        display: flex;
+        align-items: center;
+    }
+
+    form button{
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    form button:hover{
+        font-size: 1.2rem;
+    }
+
+    .option{
+        font-size: 1.1rem;
+        margin-top: 25px;
+    }
+
+    .login-options{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .login-options .card{
+        padding: 12px;
+    }
+
+    .login-options .card p{
+        font-size: 1rem;
+    }
+
+    .login-options img{
+        max-width: 25px;
+    }
+
+    .secure{
+        padding: 15px;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .secure .icon{
+        font-size: 2rem;
+        padding: 8px;
+        flex-shrink: 0;
+    }
+
+    .secure .text span{
+        font-size: 1rem;
+    }
+
+    .secure .text p{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/* ============================= */
+/* SMALL PHONES - 450px */
+/* ============================= */
+
+@media (max-width: 450px){
+
+    .hero-head{
+        padding: 15px;
+    }
+
+    .hero-head h1{
+        font-size: 1.8rem;
+    }
+
+    .hero-head p{
+        font-size: 0.8rem;
+    }
+
+    .hero-text{
+        padding: 15px;
+        height: 160px;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+    .explore{
+        font-size: 0.8rem;
+    }
+
+    .login-in-form{
+        padding: 15px 10px;
+    }
+
+    form{
+        padding: 15px 10px;
+    }
+
+    .form-main{
+        padding: 15px;
+    }
+
+    .remember{
+        font-size: 0.8rem;
+    }
+
+    .secure{
+        padding: 12px;
+    }
+
+    .secure .icon{
+        font-size: 1.5rem;
+        padding: 7px;
+    }
+
+    .secure .text span{
+        font-size: 0.85rem;
+    }
+
+    .secure .text p{
+        font-size: 0.7rem;
+    }
+
+}

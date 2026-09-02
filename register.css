@@ -1,0 +1,568 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrap{
+    margin: 0px auto;
+    max-width: 1500px;
+}
+
+
+
+/* Hero section  */
+.hero{
+    background-image: url(images/regis-loginBg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-head{
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-head h1{
+    font-size: 2.5rem;
+}
+
+.hero-head h1 span{
+    color: gold;
+}
+
+.hero-text{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+
+.hero-head p{
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.283);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hero-head p a{
+    text-decoration: none;
+    color: gold;
+    cursor: pointer;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 span{
+    color: gold;
+}
+
+.explore{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* login in form section  */
+.register-form{
+    padding: 40px;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    padding: 40px;
+    background-color: rgb(40, 40, 40);
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.main-form{
+    border: 1px solid rgb(49, 49, 49);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    width: 100%;
+}
+
+.personal-card{
+    display: flex;
+}
+
+.main-form input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    width: 350px;
+    font-size: 1rem;
+    /* background-color: gray; */
+}
+
+.main-form input::placeholder{
+    font-size: 1rem
+}
+
+.main-form i{
+    color: gold;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.form-head{
+    margin-bottom: 20px;
+    color: gold;
+    font-size: 1.4rem;
+}
+
+.form2{
+    margin-top: 40px;
+}
+
+.main-form div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.check a{
+    color: gold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background-color: gold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold
+}
+
+form button:hover{
+    font-size: 2rem;
+    background-color: hsl(51, 100%, 30%);
+}
+
+.option{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+.login-options img{
+    width: 100%;
+    max-width: 30px ;
+}
+
+.login-options .card{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#eyetoggle:hover{
+    cursor: pointer;
+}
+
+.login-options .card:hover{
+    background-color: gold;
+    color: black;
+}
+
+.login-options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px
+}
+
+.login-options .card p{
+    font-size: 1.4rem;
+}
+
+#info{
+    color: red;
+    /* display: none; */
+}
+
+#valid{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    width: fit-content;
+    display: none;
+}
+
+#successful{
+    color: green;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+/* ================================= */
+/* TABLET VIEW - 998px */
+/* ================================= */
+
+@media (max-width: 998px){
+
+    .hero-head{
+        padding: 30px;
+    }
+
+    .hero-head h1{
+        font-size: 2.2rem;
+    }
+
+    .hero-head p{
+        font-size: 1rem;
+    }
+
+    .hero-text{
+        padding: 30px;
+        height: 180px;
+    }
+
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+
+    /* Register section */
+
+    .register-form{
+        padding: 30px;
+    }
+
+    form{
+        width: 100%;
+        max-width: 750px;
+        padding: 30px;
+    }
+
+    .personal-card{
+        gap: 10px;
+    }
+
+    .personal-card .main-form{
+        width: 50%;
+    }
+
+    .main-form{
+        width: 100%;
+    }
+
+    .main-form input{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .main-form div{
+        min-width: 0;
+    }
+
+    .remember{
+        font-size: 1rem;
+    }
+
+    form button{
+        padding: 16px;
+    }
+
+    .login-options .card{
+        padding: 15px;
+    }
+
+    .login-options .card p{
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* ================================= */
+/* PHONE VIEW - 768px */
+/* ================================= */
+
+@media (max-width: 768px){
+
+    .hero-head{
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .hero-head h1{
+        font-size: 2rem;
+    }
+
+    .hero-head p{
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    .hero-text{
+        padding: 20px;
+        height: 180px;
+    }
+
+    .hero-text h1{
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+    }
+
+    .explore{
+        font-size: 0.9rem;
+    }
+
+
+    /* Register form */
+
+    .register-form{
+        padding: 20px 15px;
+    }
+
+    form{
+        width: 100%;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    .form-head{
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .form2{
+        margin-top: 25px;
+    }
+
+
+    /* Personal information */
+
+    .personal-card{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .personal-card .main-form{
+        width: 100%;
+    }
+
+    .main-form{
+        padding: 18px;
+        width: 100%;
+    }
+
+    .main-form input{
+        width: 100%;
+        min-width: 0;
+        font-size: 0.9rem;
+    }
+
+    .main-form input::placeholder{
+        font-size: 0.9rem;
+    }
+
+    .main-form i{
+        font-size: 1.2rem;
+        margin-right: 8px;
+    }
+
+
+    /* Password fields */
+
+    .main-form div{
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* Terms */
+
+    .remember{
+        font-size: 0.85rem;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .check{
+        line-height: 1.5;
+    }
+
+    .check input{
+        vertical-align: middle;
+    }
+
+
+    /* Create account button */
+
+    form button{
+        font-size: 1.2rem;
+        padding: 14px;
+    }
+
+    form button:hover{
+        font-size: 1.2rem;
+    }
+
+
+    /* Social login */
+
+    .option{
+        font-size: 1.1rem;
+        margin-top: 25px;
+    }
+
+    .login-options{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .login-options .card{
+        padding: 12px;
+    }
+
+    .login-options .card p{
+        font-size: 1rem;
+    }
+
+    .login-options img{
+        max-width: 25px;
+    }
+
+}
+
+
+/* ================================= */
+/* SMALL PHONES - 450px */
+/* ================================= */
+
+@media (max-width: 450px){
+
+    .hero-head{
+        padding: 15px;
+    }
+
+    .hero-head h1{
+        font-size: 1.8rem;
+    }
+
+    .hero-head p{
+        font-size: 0.8rem;
+    }
+
+    .hero-text{
+        padding: 15px;
+        height: 160px;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+    .explore{
+        font-size: 0.8rem;
+    }
+
+
+    /* Register form */
+
+    .register-form{
+        padding: 15px 10px;
+    }
+
+    form{
+        padding: 15px 10px;
+    }
+
+    .form-head{
+        font-size: 1rem;
+    }
+
+    .main-form{
+        padding: 15px;
+    }
+
+    .main-form i{
+        font-size: 1rem;
+    }
+
+    .main-form input{
+        font-size: 0.8rem;
+    }
+
+    .main-form input::placeholder{
+        font-size: 0.8rem;
+    }
+
+    .remember{
+        font-size: 0.75rem;
+    }
+
+    form button{
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .option{
+        font-size: 1rem;
+    }
+
+    .login-options .card{
+        padding: 10px;
+    }
+
+    .login-options .card p{
+        font-size: 0.9rem;
+    }
+
+}
