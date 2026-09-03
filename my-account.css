@@ -64,6 +64,20 @@ aside ul li:hover a {
     color: white;
 }
 
+.slideIn {
+    animation: slideIn 0.5s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .head {
     display: flex;
     justify-content: space-between;
