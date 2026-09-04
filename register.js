@@ -10,6 +10,7 @@ let valid = document.querySelector('#valid');
 let form = document.querySelector('form');
 let success = document.querySelector('#successful');
 let Fname = document.querySelector('#Fname')
+let Uname = document.querySelector('#Uname')
 
 
 eye.addEventListener('click', (e) => {
@@ -77,9 +78,10 @@ form.addEventListener('submit', (e) => {
         success.style.display = 'block';
         success.scrollIntoView({ behavior: 'smooth' });
         localStorage.setItem('fullname', Fname.value)
+        localStorage.setItem('username',Uname.value)
         setTimeout(()=>{
             window.location.href = 'login-in.html'
-        },3000)
+        },2000)
     }
 
 
