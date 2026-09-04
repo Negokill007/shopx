@@ -11,6 +11,7 @@ let form = document.querySelector('form');
 let success = document.querySelector('#successful');
 let Fname = document.querySelector('#Fname')
 let Uname = document.querySelector('#Uname')
+let Pnumber = document.querySelector('#Pnumber')
 
 
 eye.addEventListener('click', (e) => {
@@ -79,6 +80,7 @@ form.addEventListener('submit', (e) => {
         success.scrollIntoView({ behavior: 'smooth' });
         localStorage.setItem('fullname', Fname.value)
         localStorage.setItem('username',Uname.value)
+        localStorage.setItem('phoneNumber',Pnumber.value)
         setTimeout(()=>{
             window.location.href = 'login-in.html'
         },2000)
